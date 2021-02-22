@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*__________MENU__________*/
+
+header{
+    width: auto;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header ul li a{
+    display: block;
+    padding: 20px;
+    color: #444444;
+    text-decoration: none;
+    font-family: 'Benne';
+}
+
+header ul li a:hover{
+    color: #ffffff;
+    background-color: #444444;
+}
+
+header ul ul{
+    position: absolute;
+    top: 60px;
+    display: block;
+    transform: translatex(60%);
+    opacity: 0;
+    transition: all .6s;
+}
+
+header ul li:hover ul{
+    opacity: 1;
+    transform: translateX(0%);   
+}
+/*_____________BAN__________________*/
