@@ -17,14 +17,16 @@ header{
 header ul{
     display: flex;
     list-style: none;
+   
 }
 
 header ul li a{
     display: block;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     color: #444444;
     text-decoration: none;
-    font-family: 'Benne';
+    font-family: 'Montserrat';
+    background: #ffffff;
 }
 
 header ul li a:hover{
@@ -46,3 +48,56 @@ header ul li:hover ul{
     transform: translateX(0%);   
 }
 /*_____________BAN__________________*/
+
+.Ban{
+    width: 100%;
+    height: 750px;
+    animation: Ban 10s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    z-index: 1;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+
+.info h1{
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+}
+
+/*Animacion del banner*/
+
+@keyframes Ban{
+    0%, 20%{
+        background-image: url(../img/FODNO_2.png)
+    }
+    25%, 45%{
+        background-image: url(../img/FONDO_4.png)
+    }
+    50%, 70%{
+        background-image: url(../img/FONDO_hd.png)
+    }
+    75%, 100%{
+        background-image: url(../img/FONDOS_3.png)
+    }
+    
+}
+
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.3);
+}
+
